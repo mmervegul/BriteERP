@@ -1,6 +1,7 @@
 package tests.functional_tests.Inbox;
 
 import org.testng.annotations.Test;
+import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
@@ -35,7 +36,7 @@ public class InboxMessage extends TestBase {
         assertEquals(actualText, "Congratulations, your inbox is empty");
 
         extentLogger.info("Title contains InboxMessage");
-        assertTrue(driver.getTitle().contains("InboxMessage"));
+        assertEquals(driver.getTitle(), ApplicationConstants.PUBLICCHANNELS);
 
         extentLogger.pass("Passed : Inbox message test");
 

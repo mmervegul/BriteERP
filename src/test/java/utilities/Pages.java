@@ -1,13 +1,11 @@
 package utilities;
 
-import pages.ChannelsPage;
-import pages.GeneralChanelPage;
-import pages.InboxPage;
-import pages.LoginPage;
+import pages.*;
 
 public class Pages {
 
     private LoginPage loginPage;
+    private NegativeLoginPage negativeLoginPage;
     private InboxPage inboxPage;
     private ChannelsPage channelsPage;
     private GeneralChanelPage generalChanelPage;
@@ -18,6 +16,13 @@ public class Pages {
         }
         return loginPage;
 
+    }
+
+    public NegativeLoginPage negativeLogin(){
+        if(negativeLoginPage == null) {
+            negativeLoginPage = new NegativeLoginPage();
+        }
+        return negativeLoginPage;
     }
 
     public InboxPage inbox(){

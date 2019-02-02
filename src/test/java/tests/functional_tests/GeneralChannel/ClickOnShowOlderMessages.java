@@ -6,10 +6,10 @@ import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class ShowOlderMessages extends TestBase {
+public class ClickOnShowOlderMessages extends TestBase {
 
     @Test
-    public void showOlderMessages(){
+    public void clickOnShowOlderMessages(){
 
         extentLogger = report.createTest("InboxMessage");
 
@@ -39,7 +39,7 @@ public class ShowOlderMessages extends TestBase {
         extentLogger.info("Showing older messages");
         pages.generalChanel().showOlderMessages.click();
 
-        extentLogger.pass("Pass : Show older messages test");
+        extentLogger.pass("Pass : Click on show older messages test");
 
 
     }
