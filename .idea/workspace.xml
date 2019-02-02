@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba45ebb8-79ce-4e24-a226-6094792b6595" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/functional_tests/DirectMessage/ClickOnUserName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/functional_tests/DirectMessage/ClickOnUserName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/functional_tests/GeneralChannel/ShowOlderMessages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/functional_tests/GeneralChannel/ClickOnShowOlderMessages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/functional_tests/Inbox/InboxMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/functional_tests/Inbox/InboxMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ApplicationConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ApplicationConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Pages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/functional_tests/GeneralChannel/CreateNewChannel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/functional_tests/GeneralChannel/CreateNewChannel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/functional_tests/GeneralChannel/ShowOlderMessages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/functional_tests/Inbox/InboxMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/functional_tests/Inbox/InboxMessage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng_runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng_runner.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -332,7 +321,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549132570750" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549132834335" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
