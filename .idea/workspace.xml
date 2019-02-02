@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pages/NegativeLoginPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+            <state relative-caret-position="143">
+              <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#77#78#0" expanded="true" />
@@ -89,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/smoke_tests/NegativeLoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+            <state relative-caret-position="347">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,8 +191,8 @@
         <option value="$PROJECT_DIR$/configuration.properties" />
         <option value="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utilities/Pages.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pages/NegativeLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/utilities/ApplicationConstants.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pages/NegativeLoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/tests/smoke_tests/NegativeLoginTest.java" />
       </list>
     </option>
@@ -332,7 +332,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549132565395" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549132570750" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -470,12 +470,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InboxMessage_inboxMessageTest - 2019.02.02 at 12h 21m 22s.xml">
-      <configuration name="InboxMessage.inboxMessageTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="InboxMessage_inboxMessageTest - 2019.02.02 at 12h 41m 16s.xml">
-      <configuration name="InboxMessage.inboxMessageTest" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="InboxLink_inboxLinkTest - 2019.02.02 at 12h 41m 44s.xml">
       <configuration name="InboxLink.inboxLinkTest" configurationId="TestNG" />
     </history-entry>
@@ -500,10 +494,15 @@
     <history-entry file="NegativeLoginTest_negativeSalesUserLogin - 2019.02.02 at 13h 27m 58s.xml">
       <configuration name="NegativeLoginTest.negativeSalesUserLogin" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="NegativeLoginTest_negativeSalesUserLogin - 2019.02.02 at 13h 35m 38s.xml">
+      <configuration name="NegativeLoginTest.negativeSalesUserLogin" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="NegativeLoginTest_negativeSalesUserLogin - 2019.02.02 at 13h 36m 15s.xml">
+      <configuration name="NegativeLoginTest.negativeSalesUserLogin" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="43" width="1440" height="813" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24391988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -514,12 +513,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32871014" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33841887" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33841887" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32871014" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32871014" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32871014" />
@@ -768,10 +767,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ApplicationConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pages/NegativeLoginPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="34" column="77" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
+        <state relative-caret-position="143">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#77#78#0" expanded="true" />
@@ -780,17 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/utilities/ApplicationConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/smoke_tests/NegativeLoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="51" column="50" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+        <state relative-caret-position="347">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
