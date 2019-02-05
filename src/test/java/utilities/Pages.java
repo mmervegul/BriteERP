@@ -9,6 +9,7 @@ public class Pages {
     private InboxPage inboxPage;
     private ChannelsPage channelsPage;
     private GeneralChanelPage generalChanelPage;
+    private LinkButtonsPage linkButtonsPage;
 
     public LoginPage login() {
         if (loginPage == null) {
@@ -44,5 +45,12 @@ public class Pages {
             generalChanelPage = new GeneralChanelPage();
         }
         return generalChanelPage;
+    }
+
+    public LinkButtonsPage linkButtonsPage(){
+        if(linkButtonsPage == null) {
+            linkButtonsPage = new LinkButtonsPage();
+        }
+        return linkButtonsPage;
     }
 }

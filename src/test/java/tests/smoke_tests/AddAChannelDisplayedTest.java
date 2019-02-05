@@ -1,4 +1,4 @@
-package tests.functional_tests.GeneralChannel;
+package tests.smoke_tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -6,10 +6,10 @@ import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class CreateNewChannel extends TestBase {
+public class AddAChannelDisplayedTest extends TestBase {
 
     @Test
-    public void createAChannel() {
+    public void addAChannelDisplayedTest() {
 
         extentLogger = report.createTest("InboxMessage");
 
@@ -36,15 +36,8 @@ public class CreateNewChannel extends TestBase {
         extentLogger.info("Adding a channel box button");
         pages.generalChanel().addAChannelBox.click();
 
-        extentLogger.info("Writing a new channel name");
-        pages.generalChanel().addAChannelBox.sendKeys("New Events");
+        Assert.assertTrue(pages.generalChanel().addAChannelBox.isDisplayed());
 
-        extentLogger.info("Clicking on new channel name");
-        pages.generalChanel().clickName.click();
-
-        extentLogger.pass("Pass : Create a channel test");
-
-
-
+        extentLogger.pass("Pass : 'Add a channel' displayed test");
     }
 }
