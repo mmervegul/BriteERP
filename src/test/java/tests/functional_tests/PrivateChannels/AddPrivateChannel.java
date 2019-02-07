@@ -1,13 +1,14 @@
-package tests.functional_tests.Inbox;
+package tests.functional_tests.PrivateChannels;
 
+import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class InboxLink extends TestBase {
+public class AddPrivateChannel extends TestBase {
 
     @Test
-    public void inboxLinkTest(){
+    public void addPrivateChannel() {
 
         extentLogger = report.createTest("InboxMessage");
 
@@ -22,12 +23,12 @@ public class InboxLink extends TestBase {
         extentLogger.info("Logging to the application with correct username and password");
         pages.login().managerUserLogin();
 
-        extentLogger.info("Clicking on InboxMessage button");
-        pages.inbox().inboxButton.click();
+        extentLogger.info("Clicking on private channel plus sign");
+        pages.privateChannel().privateChannelPlusButton.click();
 
-        extentLogger.pass("Pass : Inbox Message link button is clickable");
+        extentLogger.info("Adding new private channel");
+        pages.privateChannel().addAPrivateChannelBox.sendKeys("New team", Keys.ENTER);
 
-
+        extentLogger.pass("Pass : Add private channel test");
     }
-
 }

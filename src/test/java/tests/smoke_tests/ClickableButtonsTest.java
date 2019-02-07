@@ -9,7 +9,7 @@ import utilities.TestBase;
 public class ClickableButtonsTest extends TestBase {
 
     @Test
-    public void starredLinkButtonClickableTest() {
+    public void starredButtonClickableTest() {
 
         extentLogger = report.createTest("Page headers test");
 
@@ -28,7 +28,7 @@ public class ClickableButtonsTest extends TestBase {
         pages.login().managerUserLogin();
 
         extentLogger.info("Clicking on starred message button");
-        pages.linkButtonsPage().starredMessageLinkButton.click();
+        pages.linkButtons().starredMessageLinkButton.click();
 
         extentLogger.pass("Pass : Starred link button clickable test");
     }
@@ -56,7 +56,7 @@ public class ClickableButtonsTest extends TestBase {
         pages.generalChanel().clickGeneralChannel.click();
 
         extentLogger.info("Clicking on 'Write something...' box");
-        pages.linkButtonsPage().writeSomethingBox.click();
+        pages.linkButtons().writeSomethingBox.click();
 
         extentLogger.pass("Pass : Write something box clickable test");
 
@@ -90,4 +90,49 @@ public class ClickableButtonsTest extends TestBase {
         extentLogger.pass("Pass : Verifying plus sign clickable test");
 
     }
+
+    @Test
+    public void inboxButtonCLickableTest() {
+
+        extentLogger = report.createTest("InboxMessage");
+
+        driver.manage().window().maximize();
+
+        extentLogger.info("Going to the URL");
+        driver.get(ConfigurationReader.getProperty("url"));
+
+        extentLogger.info("Clicking on BriteErpDemo");
+        pages.login().BriteErpDemoButton.click();
+
+        extentLogger.info("Logging to the application with correct username and password");
+        pages.login().managerUserLogin();
+
+        extentLogger.info("Clicking on InboxMessage button");
+        pages.inbox().inboxButton.click();
+
+        extentLogger.pass("Pass : Inbox link button is clickable");
+    }
+
+    @Test
+    public void channelButtonClickableTest() {
+
+        extentLogger = report.createTest("InboxMessage");
+
+        driver.manage().window().maximize();
+
+        extentLogger.info("Going to the URL");
+        driver.get(ConfigurationReader.getProperty("url"));
+
+        extentLogger.info("Clicking on BriteErpDemo");
+        pages.login().BriteErpDemoButton.click();
+
+        extentLogger.info("Logging to the application with correct username and password");
+        pages.login().managerUserLogin();
+
+        extentLogger.info("Clicking on Channels button");
+        pages.channels().channelsLink.click();
+
+        extentLogger.pass("Pass : Channel button clickable test");
+    }
+
 }

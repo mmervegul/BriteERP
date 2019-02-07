@@ -9,6 +9,7 @@ public class Pages {
     private InboxPage inboxPage;
     private ChannelsPage channelsPage;
     private GeneralChanelPage generalChanelPage;
+    private PrivateChannelPage privateChannelPage;
     private LinkButtonsPage linkButtonsPage;
 
     public LoginPage login() {
@@ -19,38 +20,45 @@ public class Pages {
 
     }
 
-    public NegativeLoginPage negativeLogin(){
+    public NegativeLoginPage negativeLogin() {
         if(negativeLoginPage == null) {
             negativeLoginPage = new NegativeLoginPage();
         }
         return negativeLoginPage;
     }
 
-    public InboxPage inbox(){
+    public InboxPage inbox() {
         if(inboxPage == null) {
             inboxPage = new InboxPage();
         }
         return inboxPage;
     }
 
-    public ChannelsPage channels(){
+    public ChannelsPage channels() {
         if(channelsPage == null) {
             channelsPage = new ChannelsPage();
         }
         return channelsPage;
     }
 
-    public GeneralChanelPage generalChanel(){
+    public GeneralChanelPage generalChanel() {
         if(generalChanelPage == null) {
             generalChanelPage = new GeneralChanelPage();
         }
         return generalChanelPage;
     }
 
-    public LinkButtonsPage linkButtonsPage(){
+    public LinkButtonsPage linkButtons() {
         if(linkButtonsPage == null) {
             linkButtonsPage = new LinkButtonsPage();
         }
         return linkButtonsPage;
+    }
+
+    public PrivateChannelPage privateChannel() {
+        if(privateChannelPage == null) {
+            privateChannelPage = new PrivateChannelPage();
+        }
+        return privateChannelPage;
     }
 }

@@ -6,7 +6,7 @@ import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class AddAChannelDisplayedTest extends TestBase {
+public class AddAChannelDisplayed extends TestBase {
 
     @Test
     public void addAChannelDisplayedTest() {
