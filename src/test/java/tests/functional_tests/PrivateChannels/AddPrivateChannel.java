@@ -30,5 +30,7 @@ public class AddPrivateChannel extends TestBase {
         pages.privateChannel().addAPrivateChannelBox.sendKeys("New team", Keys.ENTER);
 
         extentLogger.pass("Pass : Add private channel test");
+
+
     }
 }
