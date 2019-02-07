@@ -9,7 +9,7 @@ public class ClickLeaveButton extends TestBase {
     @Test
     public void clickOnLeaveButton(){
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Click on leave button");
 
         driver.manage().window().maximize();
 

@@ -1,6 +1,6 @@
 package tests.functional_tests.GeneralChannel;
 
-import org.testng.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
@@ -11,7 +11,7 @@ public class ClickOnShowOlderMessages extends TestBase {
     @Test
     public void clickOnShowOlderMessages(){
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Click on show older message test");
 
         driver.manage().window().maximize();
 
@@ -19,7 +19,7 @@ public class ClickOnShowOlderMessages extends TestBase {
         driver.get(ConfigurationReader.getProperty("url"));
 
         extentLogger.info("Verifying home page title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
         extentLogger.info("Clicking on BriteErpDemo");
         pages.login().BriteErpDemoButton.click();
@@ -28,13 +28,13 @@ public class ClickOnShowOlderMessages extends TestBase {
         pages.login().managerUserLogin();
 
         extentLogger.info("Verifying login page title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
         extentLogger.info("Clicking on General Channel");
         pages.generalChanel().clickGeneralChannel.click();
 
         extentLogger.info("Verifying public channels title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.PUBLICCHANNELS);
+        assertEquals(driver.getTitle(), ApplicationConstants.PUBLICCHANNELS);
 
         extentLogger.info("Showing older messages");
         pages.generalChanel().showOlderMessages.click();

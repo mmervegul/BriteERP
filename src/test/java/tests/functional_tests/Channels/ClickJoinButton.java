@@ -9,7 +9,7 @@ public class ClickJoinButton extends TestBase {
     @Test
     public void clickOnJoinButton(){
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Click on join button test");
 
         driver.manage().window().maximize();
 

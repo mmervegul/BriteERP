@@ -1,5 +1,8 @@
 package tests.functional_tests.PrivateChannels;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
@@ -9,7 +12,7 @@ public class SendMessage extends TestBase {
     @Test
     public void sendMessage() {
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Send message test");
 
         driver.manage().window().maximize();
 
@@ -21,6 +24,17 @@ public class SendMessage extends TestBase {
 
         extentLogger.info("Logging to the application with correct username and password");
         pages.login().managerUserLogin();
+
+        extentLogger.info("Clicking on private channel plus sign");
+        pages.privateChannel().privateChannelPlusButton.click();
+
+        extentLogger.info("Adding new person to private channel");
+        pages.privateChannel().addAPrivateChannelBox.sendKeys("SalesManager4", Keys.ENTER);
+
+        extentLogger.info("Clicking and writing some message to write something box");
+        pages.privateChannel().writeSomethingBox.sendKeys("Hello");
+
+        extentLogger.pass("Pass : Send message test");
 
 
 

@@ -2,7 +2,7 @@ package tests.functional_tests.GeneralChannel;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
@@ -16,7 +16,7 @@ public class MessagesTime extends TestBase {
     @Test
     public void messagesTime(){
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Messages time test");
 
         driver.manage().window().maximize();
 
@@ -24,7 +24,7 @@ public class MessagesTime extends TestBase {
         driver.get(ConfigurationReader.getProperty("url"));
 
         extentLogger.info("Verifying home page title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
         extentLogger.info("Clicking on BriteErpDemo");
         pages.login().BriteErpDemoButton.click();
@@ -33,7 +33,7 @@ public class MessagesTime extends TestBase {
         pages.login().managerUserLogin();
 
         extentLogger.info("Verifying login page title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
         extentLogger.info("Clicking on General Channel");
         pages.generalChanel().clickGeneralChannel.click();

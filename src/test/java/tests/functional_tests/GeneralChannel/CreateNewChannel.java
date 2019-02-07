@@ -1,6 +1,6 @@
 package tests.functional_tests.GeneralChannel;
 
-import org.testng.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
@@ -11,7 +11,7 @@ public class CreateNewChannel extends TestBase {
     @Test
     public void createAChannel() {
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Create a channel test");
 
         driver.manage().window().maximize();
 
@@ -19,7 +19,7 @@ public class CreateNewChannel extends TestBase {
         driver.get(ConfigurationReader.getProperty("url"));
 
         extentLogger.info("Verifying home page title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
         extentLogger.info("Clicking on BriteErpDemo");
         pages.login().BriteErpDemoButton.click();
@@ -28,7 +28,7 @@ public class CreateNewChannel extends TestBase {
         pages.login().managerUserLogin();
 
         extentLogger.info("Verifying login page title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
         extentLogger.info("Clicking on plus sign");
         pages.generalChanel().channelsPlusSign.click();

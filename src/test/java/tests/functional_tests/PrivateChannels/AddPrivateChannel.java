@@ -31,6 +31,5 @@ public class AddPrivateChannel extends TestBase {
 
         extentLogger.pass("Pass : Add private channel test");
 
-
     }
 }

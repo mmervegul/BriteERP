@@ -5,15 +5,14 @@ import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 public class InboxMessage extends TestBase {
 
     @Test
     public void inboxMessageTest(){
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Inbox message test");
 
         driver.manage().window().maximize();
 

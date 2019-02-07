@@ -1,6 +1,6 @@
 package tests.functional_tests.DirectMessage;
 
-import org.testng.Assert;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
@@ -11,7 +11,7 @@ public class ClickOnUserName extends TestBase {
     @Test
     public void clickOnUserName(){
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Click on username test");
 
         driver.manage().window().maximize();
 
@@ -19,7 +19,7 @@ public class ClickOnUserName extends TestBase {
         driver.get(ConfigurationReader.getProperty("url"));
 
         extentLogger.info("Verifying home page title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
         extentLogger.info("Clicking on BriteErpDemo");
         pages.login().BriteErpDemoButton.click();
@@ -28,7 +28,7 @@ public class ClickOnUserName extends TestBase {
         pages.login().managerUserLogin();
 
         extentLogger.info("Verifying login page title");
-        Assert.assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
 
     }

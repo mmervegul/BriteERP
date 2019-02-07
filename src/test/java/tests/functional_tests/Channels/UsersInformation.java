@@ -12,7 +12,7 @@ public class UsersInformation extends TestBase {
     @Test
     public void usersInformationTest(){
 
-        extentLogger = report.createTest("InboxMessage");
+        extentLogger = report.createTest("Users information test");
 
         driver.manage().window().maximize();
 
