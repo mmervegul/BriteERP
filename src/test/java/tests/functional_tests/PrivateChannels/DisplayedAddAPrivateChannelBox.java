@@ -5,12 +5,12 @@ import org.testng.annotations.Test;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class AddPrivateChannel extends TestBase {
+public class DisplayedAddAPrivateChannelBox extends TestBase {
 
     @Test
-    public void addPrivateChannel() {
+    public void displayedAddAPrivateChannelbOX() {
 
-        extentLogger = report.createTest("Add a private channel test");
+        extentLogger = report.createTest("Displayed 'Add a private channel' box test");
 
         driver.manage().window().maximize();
 
@@ -26,10 +26,10 @@ public class AddPrivateChannel extends TestBase {
         extentLogger.info("Clicking on private channel plus sign");
         pages.privateChannel().privateChannelPlusButton.click();
 
-        extentLogger.info("Adding a new private channel");
-        pages.privateChannel().addAPrivateChannelBox.sendKeys("NEW TEAM", Keys.ENTER);
+        extentLogger.info("Checking 'Add a private channel' box");
+        pages.privateChannel().addAPrivateChannelBox.isDisplayed();
 
-        extentLogger.pass("Pass : Add a private channel test");
+        extentLogger.pass("Pass : Displayed 'Add a private channel box' test");
 
     }
 }

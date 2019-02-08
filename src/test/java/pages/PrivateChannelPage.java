@@ -18,13 +18,16 @@ public class PrivateChannelPage {
     @FindBy(xpath = "(//input[@class='o_input'])[1]")
     public WebElement addAPrivateChannelBox;
 
-    @FindBy(xpath = "(//div[@class='o_composer_input'])[1]")
+    @FindBy(xpath = "//div[@class='o_chat_composer o_chat_inline_composer']//div/div/div/textarea[1]")
     public WebElement writeSomethingBox;
 
-    @FindBy(xpath = "(//button[@class='btn btn-sm btn-primary o_composer_button_send hidden-xs'])[1]")
+    @FindBy(xpath = "//div[@class='o_chat_composer o_chat_inline_composer']//div[2]/button")
     public WebElement sendButton;
 
+    @FindBy(xpath = "//div[@title='New team']")
+    public WebElement newTeamPrivateChannel;
+
     @FindBy(xpath = "(//button[@class='btn btn-sm btn-icon fa fa-smile-o o_composer_button_emoji'])[1]")
-    public WebElement emojiButton;
+    public WebElement emojiButtonPrivateChannel;
 
 }

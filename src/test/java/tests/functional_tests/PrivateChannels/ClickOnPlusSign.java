@@ -1,16 +1,16 @@
 package tests.functional_tests.PrivateChannels;
 
-import org.openqa.selenium.Keys;
+import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class AddPrivateChannel extends TestBase {
+public class ClickOnPlusSign extends TestBase {
 
     @Test
-    public void addPrivateChannel() {
+    public void clickOnPlusSign() {
 
-        extentLogger = report.createTest("Add a private channel test");
+        extentLogger = report.createTest("Click on plus sign test");
 
         driver.manage().window().maximize();
 
@@ -26,10 +26,7 @@ public class AddPrivateChannel extends TestBase {
         extentLogger.info("Clicking on private channel plus sign");
         pages.privateChannel().privateChannelPlusButton.click();
 
-        extentLogger.info("Adding a new private channel");
-        pages.privateChannel().addAPrivateChannelBox.sendKeys("NEW TEAM", Keys.ENTER);
-
-        extentLogger.pass("Pass : Add a private channel test");
+        extentLogger.pass("Pass : Click on plus sign test");
 
     }
 }

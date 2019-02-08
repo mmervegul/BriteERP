@@ -11,6 +11,7 @@ public class Pages {
     private GeneralChanelPage generalChanelPage;
     private PrivateChannelPage privateChannelPage;
     private LinkButtonsPage linkButtonsPage;
+    private DirectMessagePage directMessagePage;
 
     public LoginPage login() {
         if (loginPage == null) {
@@ -60,5 +61,12 @@ public class Pages {
             privateChannelPage = new PrivateChannelPage();
         }
         return privateChannelPage;
+    }
+
+    public DirectMessagePage directMessage() {
+        if(directMessagePage == null) {
+            directMessagePage = new DirectMessagePage();
+        }
+        return directMessagePage;
     }
 }

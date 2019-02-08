@@ -63,9 +63,9 @@ public class ClickableButtonsTest extends TestBase {
     }
 
     @Test
-    public void plusSignClickableTest() {
+    public void generalChannelPlusSignClickableTest() {
 
-        extentLogger = report.createTest("Plus sign clickable test");
+        extentLogger = report.createTest("General channel plus sign clickable test");
 
         driver.manage().window().maximize();
 
@@ -87,7 +87,30 @@ public class ClickableButtonsTest extends TestBase {
         extentLogger.info("Clicking on plus sign");
         pages.generalChanel().channelsPlusSign.click();
 
-        extentLogger.pass("Pass : Verifying plus sign clickable test");
+        extentLogger.pass("Pass : General channel plus sign clickable test");
+
+    }
+
+    @Test
+    public void directMessagePlusSignClickableTest() {
+
+        extentLogger = report.createTest("Direct message plus sign clickable test");
+
+        driver.manage().window().maximize();
+
+        extentLogger.info("Going to the URL");
+        driver.get(ConfigurationReader.getProperty("url"));
+
+        extentLogger.info("Clicking on BriteErpDemo");
+        pages.login().BriteErpDemoButton.click();
+
+        extentLogger.info("Logging to the application with correct username and password");
+        pages.login().managerUserLogin();
+
+        extentLogger.info("Clicking on direct message plus sign");
+        pages.directMessage().directMessagePlusSign.click();
+
+        extentLogger.pass("Pass : Direct message plus sign clickable test");
 
     }
 
@@ -110,7 +133,7 @@ public class ClickableButtonsTest extends TestBase {
         extentLogger.info("Clicking on InboxMessage button");
         pages.inbox().inboxButton.click();
 
-        extentLogger.pass("Pass : Inbox link button is clickable");
+        extentLogger.pass("Pass : Inbox button clickable test");
     }
 
     @Test

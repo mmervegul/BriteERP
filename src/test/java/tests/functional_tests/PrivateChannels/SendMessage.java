@@ -28,11 +28,14 @@ public class SendMessage extends TestBase {
         extentLogger.info("Clicking on private channel plus sign");
         pages.privateChannel().privateChannelPlusButton.click();
 
-        extentLogger.info("Adding new person to private channel");
+        extentLogger.info("Adding new person to private channel and clicking enter");
         pages.privateChannel().addAPrivateChannelBox.sendKeys("SalesManager4", Keys.ENTER);
 
         extentLogger.info("Clicking and writing some message to write something box");
         pages.privateChannel().writeSomethingBox.sendKeys("Hello");
+
+        extentLogger.info("Clicking on send button");
+        pages.privateChannel().sendButton.click();
 
         extentLogger.pass("Pass : Send message test");
 

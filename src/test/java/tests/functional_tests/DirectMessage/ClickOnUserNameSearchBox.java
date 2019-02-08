@@ -6,10 +6,10 @@ import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class ClickOnUserName extends TestBase {
+public class ClickOnUserNameSearchBox extends TestBase {
 
     @Test
-    public void clickOnUserName(){
+    public void clickOnUserNameSearchBox(){
 
         extentLogger = report.createTest("Click on username test");
 
@@ -27,9 +27,13 @@ public class ClickOnUserName extends TestBase {
         extentLogger.info("Logging with username and password with correct username and password");
         pages.login().managerUserLogin();
 
-        extentLogger.info("Verifying login page title");
-        assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
+        extentLogger.info("Clicking on direct message plus sign");
+        pages.directMessage().directMessagePlusSign.click();
 
+        extentLogger.info("Clicking on user name search box");
+        pages.directMessage().usernameSearchBox.click();
+
+        extentLogger.pass("Pass : Click on user name search box");
 
     }
 }
