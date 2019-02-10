@@ -10,7 +10,7 @@ public class Pages {
     private ChannelsPage channelsPage;
     private GeneralChanelPage generalChanelPage;
     private PrivateChannelPage privateChannelPage;
-    private LinkButtonsPage linkButtonsPage;
+    private StarredMessagePage starredMessagePage;
     private DirectMessagePage directMessagePage;
 
     public LoginPage login() {
@@ -49,11 +49,11 @@ public class Pages {
         return generalChanelPage;
     }
 
-    public LinkButtonsPage linkButtons() {
-        if(linkButtonsPage == null) {
-            linkButtonsPage = new LinkButtonsPage();
+    public StarredMessagePage starredMessage() {
+        if(starredMessagePage == null) {
+            starredMessagePage = new StarredMessagePage();
         }
-        return linkButtonsPage;
+        return starredMessagePage;
     }
 
     public PrivateChannelPage privateChannel() {

@@ -1,21 +1,17 @@
-package tests.functional_tests.GeneralChannel;
+package tests.functional_tests.Channels;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-import java.util.List;
-
-public class MessagesTime extends TestBase {
+public class CreateNewChannel extends TestBase {
 
     @Test
-    public void messagesTime(){
+    public void createAChannel() {
 
-        extentLogger = report.createTest("Messages time test");
+        extentLogger = report.createTest("Create a channel test");
 
         driver.manage().window().maximize();
 
@@ -34,17 +30,21 @@ public class MessagesTime extends TestBase {
         extentLogger.info("Verifying login page title");
         assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
-        extentLogger.info("Clicking on General Channel");
-        pages.generalChanel().clickGeneralChannel.click();
+        extentLogger.info("Clicking on plus sign");
+        pages.generalChanel().channelsPlusSign.click();
 
-        List<WebElement> allRows = driver.findElements(By.xpath("//p[@class='o_mail_info']"));
+        extentLogger.info("Adding a channel box button");
+        pages.generalChanel().addAChannelBox.click();
 
-        for (WebElement header : allRows) {
-            System.out.println(header.getText());
-        }
+        extentLogger.info("Writing a new channel name");
+        pages.generalChanel().addAChannelBox.sendKeys("New Events");
 
-        extentLogger.pass("Pass : Messages time test");
+        extentLogger.info("Clicking on new channel name");
+        pages.generalChanel().clickName.click();
+
+        extentLogger.pass("Pass : Create a channel test");
+
+
 
     }
-
 }

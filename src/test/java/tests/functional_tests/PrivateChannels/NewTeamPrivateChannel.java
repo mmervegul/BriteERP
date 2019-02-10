@@ -1,15 +1,15 @@
-package tests.functional_tests.Channels;
+package tests.functional_tests.PrivateChannels;
 
 import org.testng.annotations.Test;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class ClickLeaveButton extends TestBase {
+public class NewTeamPrivateChannel extends TestBase {
 
     @Test
-    public void clickOnLeaveButton(){
+    public void displayedNewTeamPrivateChannel() {
 
-        extentLogger = report.createTest("Click on leave button");
+        extentLogger = report.createTest("Displayed 'New team' private channel test");
 
         driver.manage().window().maximize();
 
@@ -22,12 +22,9 @@ public class ClickLeaveButton extends TestBase {
         extentLogger.info("Logging to the application with correct username and password");
         pages.login().managerUserLogin();
 
-        extentLogger.info("Clicking on Channels button");
-        pages.channels().channelsLink.click();
+        extentLogger.info("Checking 'New team' private channel is displayed");
+        pages.privateChannel().newTeamPrivateChannel.isDisplayed();
 
-        extentLogger.info("Clicking on Leave button");
-        pages.channels().leaveButtonForTeamChannel.click();
-
-        extentLogger.pass("Pass : Click on Leave button");
+        extentLogger.pass("Pass : Displayed 'New team' private channel test");
     }
 }

@@ -26,6 +26,24 @@ public class GeneralChanelPage {
     @FindBy(xpath = "//button[@class='btn btn-sm btn-link']")
     public WebElement showOlderMessages;
 
+    @FindBy(xpath = "//button[@title='Invite people']")
+    public WebElement inviteButton;
+
+    @FindBy(xpath = "//li[@class='select2-search-field']")
+    public WebElement searchBox;
+
+    @FindBy(id = "select2-result-label-7")
+    public WebElement EventsCRM_Manager4;
+
+    @FindBy(id = "select2-result-label-48")
+    public WebElement EventsCRM_Manager5;
+
+    @FindBy(xpath = "//span[.='Invite']")
+    public WebElement secondInviteButton;
+
+    @FindBy(xpath = "//div[.='EventsCRM_Manager4']")
+    public WebElement selectedUser;
+
 
 
 }

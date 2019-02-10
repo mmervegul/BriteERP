@@ -64,7 +64,7 @@ public abstract class TestBase {
         report.setSystemInfo("QA Engineer", "Munure Merve Gul");
 
         htmlReporter.config().setDocumentTitle("Prestashop Reports");
-        htmlReporter.config().setReportName("Prestashop Automated Test Reports");
+        htmlReporter.config().setReportName("PBriteERP Automated Test Reports");
 
         htmlReporter.config().setTheme(Theme.DARK);
 

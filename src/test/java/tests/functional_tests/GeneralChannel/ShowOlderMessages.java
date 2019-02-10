@@ -6,12 +6,12 @@ import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class CreateNewChannel extends TestBase {
+public class ShowOlderMessages extends TestBase {
 
     @Test
-    public void createAChannel() {
+    public void clickOnShowOlderMessages(){
 
-        extentLogger = report.createTest("Create a channel test");
+        extentLogger = report.createTest("Click on show older message test");
 
         driver.manage().window().maximize();
 
@@ -24,26 +24,22 @@ public class CreateNewChannel extends TestBase {
         extentLogger.info("Clicking on BriteErpDemo");
         pages.login().BriteErpDemoButton.click();
 
-        extentLogger.info("Logging to the application with correct username and password");
+        extentLogger.info("Logging with username and password with correct username and password");
         pages.login().managerUserLogin();
 
         extentLogger.info("Verifying login page title");
         assertEquals(driver.getTitle(), ApplicationConstants.LOGINPAGE);
 
-        extentLogger.info("Clicking on plus sign");
-        pages.generalChanel().channelsPlusSign.click();
+        extentLogger.info("Clicking on General Channel");
+        pages.generalChanel().clickGeneralChannel.click();
 
-        extentLogger.info("Adding a channel box button");
-        pages.generalChanel().addAChannelBox.click();
+        extentLogger.info("Verifying public channels title");
+        assertEquals(driver.getTitle(), ApplicationConstants.PUBLICCHANNELS);
 
-        extentLogger.info("Writing a new channel name");
-        pages.generalChanel().addAChannelBox.sendKeys("New Events");
+        extentLogger.info("Showing older messages");
+        pages.generalChanel().showOlderMessages.click();
 
-        extentLogger.info("Clicking on new channel name");
-        pages.generalChanel().clickName.click();
-
-        extentLogger.pass("Pass : Create a channel test");
-
+        extentLogger.pass("Pass : Click on show older messages test");
 
 
     }

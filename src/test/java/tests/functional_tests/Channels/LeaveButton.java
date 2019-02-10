@@ -4,12 +4,12 @@ import org.testng.annotations.Test;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class ClickJoinButton extends TestBase {
+public class LeaveButton extends TestBase {
 
     @Test
-    public void clickOnJoinButton(){
+    public void clickOnLeaveButton(){
 
-        extentLogger = report.createTest("Click on join button test");
+        extentLogger = report.createTest("Click on leave button");
 
         driver.manage().window().maximize();
 
@@ -25,12 +25,9 @@ public class ClickJoinButton extends TestBase {
         extentLogger.info("Clicking on Channels button");
         pages.channels().channelsLink.click();
 
-        extentLogger.info("Joining the Events channel");
-        pages.channels().joinButtonForEventChannel.click();
+        extentLogger.info("Clicking on Leave button");
+        pages.channels().leaveButtonForTeamChannel.click();
 
-        extentLogger.pass("Pass : Click on join button test");
-
-
+        extentLogger.pass("Pass : Click on Leave button");
     }
-
 }

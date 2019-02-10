@@ -25,11 +25,11 @@ public class InboxMessage extends TestBase {
         extentLogger.info("Logging to the application with correct username and password");
         pages.login().managerUserLogin();
 
-        extentLogger.info("Clicking on InboxMessage button");
+        extentLogger.info("Clicking on Inbox message button");
         pages.inbox().inboxButton.click();
 
         extentLogger.info("Getting actual message");
-        String actualText = pages.inbox().inboxEmptyMessage.getText();
+        String actualText = pages.inbox().emptyInboxMessage.getText();
 
         extentLogger.info("Verifying actual message");
         assertEquals(actualText, "Congratulations, your inbox is empty");
@@ -38,10 +38,6 @@ public class InboxMessage extends TestBase {
         assertEquals(driver.getTitle(), ApplicationConstants.PUBLICCHANNELS);
 
         extentLogger.pass("Passed : Inbox message test");
-
-
-
-
 
     }
 }

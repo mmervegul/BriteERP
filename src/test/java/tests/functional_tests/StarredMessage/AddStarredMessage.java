@@ -1,17 +1,18 @@
-package tests.functional_tests.GeneralChannel;
+package tests.functional_tests.StarredMessage;
 
-import static org.testng.Assert.*;
 import org.testng.annotations.Test;
 import utilities.ApplicationConstants;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class ClickOnShowOlderMessages extends TestBase {
+import static org.testng.Assert.assertEquals;
+
+public class AddStarredMessage extends TestBase {
 
     @Test
-    public void clickOnShowOlderMessages(){
+    public void addStarredMessage() {
 
-        extentLogger = report.createTest("Click on show older message test");
+        extentLogger = report.createTest("Add starred message test");
 
         driver.manage().window().maximize();
 
@@ -33,14 +34,10 @@ public class ClickOnShowOlderMessages extends TestBase {
         extentLogger.info("Clicking on General Channel");
         pages.generalChanel().clickGeneralChannel.click();
 
-        extentLogger.info("Verifying public channels title");
-        assertEquals(driver.getTitle(), ApplicationConstants.PUBLICCHANNELS);
+        extentLogger.info("Clicking on star button");
+        pages.starredMessage().starButton.click();
 
-        extentLogger.info("Showing older messages");
-        pages.generalChanel().showOlderMessages.click();
-
-        extentLogger.pass("Pass : Click on show older messages test");
-
+        extentLogger.pass("Pass : Add starred message test");
 
     }
 }

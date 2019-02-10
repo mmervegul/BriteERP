@@ -29,8 +29,14 @@ public class ChannelsPage {
     @FindBy(linkText = "Members")
     public WebElement members;
 
+    @FindBy(xpath = "//span[.='Discussion Group']")
+    public WebElement discussionGroup;
 
+    @FindBy(xpath = "(//span[.='sales'])[1]")
+    public WebElement firstSalesChannel;
 
+    @FindBy(xpath = "//a[.='Members']")
+    public WebElement membersButton;
 
 
 

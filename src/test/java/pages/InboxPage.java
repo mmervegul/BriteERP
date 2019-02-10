@@ -16,7 +16,8 @@ public class InboxPage {
     public WebElement inboxButton;
 
     @FindBy(className = "o_thread_title")
-    public WebElement inboxEmptyMessage;
+    public WebElement emptyInboxMessage;
+
 
 
 }

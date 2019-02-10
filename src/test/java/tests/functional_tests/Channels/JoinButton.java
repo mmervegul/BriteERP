@@ -1,15 +1,15 @@
-package tests.functional_tests.PrivateChannels;
+package tests.functional_tests.Channels;
 
 import org.testng.annotations.Test;
 import utilities.ConfigurationReader;
 import utilities.TestBase;
 
-public class DisplayedNewTeamPrivateChannel extends TestBase {
+public class JoinButton extends TestBase {
 
     @Test
-    public void displayedNewTeamPrivateChannel() {
+    public void clickOnJoinButton(){
 
-        extentLogger = report.createTest("Displayed 'New team' private channel test");
+        extentLogger = report.createTest("Click on join button test");
 
         driver.manage().window().maximize();
 
@@ -22,9 +22,15 @@ public class DisplayedNewTeamPrivateChannel extends TestBase {
         extentLogger.info("Logging to the application with correct username and password");
         pages.login().managerUserLogin();
 
-        extentLogger.info("Checking 'New team' private channel is displayed");
-        pages.privateChannel().newTeamPrivateChannel.isDisplayed();
+        extentLogger.info("Clicking on Channels button");
+        pages.channels().channelsLink.click();
 
-        extentLogger.pass("Pass : Displayed 'New team' private channel test");
+        extentLogger.info("Joining the Events channel");
+        pages.channels().joinButtonForEventChannel.click();
+
+        extentLogger.pass("Pass : Click on join button test");
+
+
     }
+
 }
