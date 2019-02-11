@@ -5,7 +5,6 @@ import pages.*;
 public class Pages {
 
     private LoginPage loginPage;
-    private NegativeLoginPage negativeLoginPage;
     private InboxPage inboxPage;
     private ChannelsPage channelsPage;
     private GeneralChanelPage generalChanelPage;
@@ -21,12 +20,12 @@ public class Pages {
 
     }
 
-    public NegativeLoginPage negativeLogin() {
-        if(negativeLoginPage == null) {
-            negativeLoginPage = new NegativeLoginPage();
-        }
-        return negativeLoginPage;
-    }
+//    public NegativeLoginPage negativeLogin() {
+//        if(negativeLoginPage == null) {
+//            negativeLoginPage = new NegativeLoginPage();
+//        }
+//        return negativeLoginPage;
+//    }
 
     public InboxPage inbox() {
         if(inboxPage == null) {

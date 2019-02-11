@@ -72,13 +72,13 @@ public class LoginTest extends TestBase {
         pages.login().BriteErpDemoButton.click();
 
         extentLogger.info("Cannot logging to the application with correct username and wrong password");
-        pages.negativeLogin().negativeManagerUserLogin();
+        pages.login().negativeManagerUserLogin();
 
         extentLogger.info("Verifying wrong login page title");
         assertEquals(driver.getTitle(), ApplicationConstants.WRONGLOGINPAGETITLE);
 
         extentLogger.info("Verifying wrong login/password message");
-        assertEquals(pages.negativeLogin().wrongLoginPasswordMessage.getText(), ApplicationConstants.WRONGLOGINMESSAGE);
+        assertEquals(pages.login().wrongLoginPasswordMessage.getText(), ApplicationConstants.WRONGLOGINMESSAGE);
 
         extentLogger.fail("Pass : Negative Manager user login test");
     }
@@ -97,13 +97,13 @@ public class LoginTest extends TestBase {
         pages.login().BriteErpDemoButton.click();
 
         extentLogger.info("Cannot logging to the application with correct username and wrong password");
-        pages.negativeLogin().negativeSalesUserLogin();
+        pages.login().negativeSalesUserLogin();
 
         extentLogger.info("Verifying wrong login page title");
         assertEquals(driver.getTitle(), ApplicationConstants.WRONGLOGINPAGETITLE);
 
         extentLogger.info("Verifying wrong login/password message");
-        assertEquals(pages.negativeLogin().wrongLoginPasswordMessage.getText(), ApplicationConstants.WRONGLOGINMESSAGE);
+        assertEquals(pages.login().wrongLoginPasswordMessage.getText(), ApplicationConstants.WRONGLOGINMESSAGE);
 
         extentLogger.fail("Pass : Negative Sales user login test");
     }

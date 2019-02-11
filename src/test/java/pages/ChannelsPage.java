@@ -5,12 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.nio.file.Watchable;
-
 public class ChannelsPage {
 
     public ChannelsPage() {
-
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
